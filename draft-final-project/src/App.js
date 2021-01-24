@@ -12,7 +12,7 @@ class App extends Component {
         <Navbar />
         <Hometag />
         <Contents />
-        <Thumbnail />
+        {/* <Thumbnail /> */}
       </div>
     );
   }

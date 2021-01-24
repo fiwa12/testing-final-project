@@ -1,76 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <title>PINSTAGRAM</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link
-      href="//fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="//fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
+  <title>PINSTAGRAM</title>
 
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="./css/style-starter.css" />
+  <link href="//fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="//fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="./css/style-starter.css">
 
-    <!-- DARI PINBALL -->
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<!----webfonts---->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<!----//webfonts---->
-		<!-- Global CSS for the page and tiles -->
-  		<link rel="stylesheet" href="./css/main.css">
-  		<link rel="stylesheet" href="./css/style.css">
-  		<!-- <link rel="stylesheet" href="./css/style.css"> -->
-  		<!-- //Global CSS for the page and tiles -->
-		<!---start-click-drop-down-menu----->
-		<script src="js/jquery.min.js"></script>
-        <!----start-dropdown--->
-         <script type="text/javascript">
-			var $ = jQuery.noConflict();
-				$(function() {
-					$('#activator').click(function(){
-						$('#box').animate({'top':'0px'},500);
-					});
-					$('#boxclose').click(function(){
-					$('#box').animate({'top':'-700px'},500);
-					});
-				});
-				$(document).ready(function(){
-				//Hide (Collapse) the toggle containers on load
-				$(".toggle_container").hide(); 
-				//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
-				$(".trigger").click(function(){
-					$(this).toggleClass("active").next().slideToggle("slow");
-						return false; //Prevent the browser jump to the link anchor
-				});
-									
-			});
-		</script>
+  <!-- DARI PINBALL -->
+  <script
+    type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  </script>
+  <!----webfonts---->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!----//webfonts---->
+  <!-- Global CSS for the page and tiles -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <!-- //Global CSS for the page and tiles -->
+  <!---start-click-drop-down-menu----->
+  <script src="js/jquery.min.js"></script>
+  <!----start-dropdown--->
+  <script type="text/javascript">
+    var $ = jQuery.noConflict();
+    $(function () {
+      $('#activator').click(function () {
+        $('#box').animate({ 'top': '0px' }, 500);
+      });
+      $('#boxclose').click(function () {
+        $('#box').animate({ 'top': '-700px' }, 500);
+      });
+    });
+    $(document).ready(function () {
+      //Hide (Collapse) the toggle containers on load
+      $(".toggle_container").hide();
+      //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+      $(".trigger").click(function () {
+        $(this).toggleClass("active").next().slideToggle("slow");
+        return false; //Prevent the browser jump to the link anchor
+      });
 
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+    });
+  </script>
+  <!-- TEST PAKAI CONTENT BUATAN SENDIRI -->
+  <link rel="stylesheet" href="./css/style2.css">
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -81,153 +71,154 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-    <!-- ============================================================  NOTE: SCRIPT FROM TEMPLATE -->
+  <!-- ============================================================  NOTE: SCRIPT FROM TEMPLATE -->
 
-    <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-      <span class="fa fa-angle-up"></span>
-    </button>
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
+  <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+    <span class="fa fa-angle-up"></span>
+  </button>
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- /move top -->
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $(".navbar-toggler").click(function () {
+        $("body").toggleClass("noscroll");
+      });
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+  <!-- Template JavaScript -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+
+  <!-- theme changer js -->
+  <script src="assets/js/theme-change.js"></script>
+  <!-- //theme changer js -->
+
+  <!-- courses owlcarousel -->
+  <script src="assets/js/owl.carousel.js"></script>
+
+  <!-- script for testimonials -->
+  <script>
+    $(document).ready(function () {
+      $(".owl-testimonial").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsiveClass: true,
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          480: {
+            items: 1,
+            nav: false,
+          },
+          667: {
+            items: 1,
+            nav: true,
+          },
+          1000: {
+            items: 1,
+            nav: true,
+          },
+        },
+      });
+    });
+  </script>
+  <!-- //script for testimonials -->
+
+  <!-- bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+
+
+  <!-- DARI PINBALL -->
+  <!----wookmark-scripts---->
+  <script src="js/jquery.imagesloaded.js"></script>
+  <script src="js/jquery.wookmark.js"></script>
+  <script type="text/javascript">
+    (function ($) {
+      var $tiles = $('#tiles'),
+        $handler = $('li', $tiles),
+        $main = $('#main'),
+        $window = $(window),
+        $document = $(document),
+        options = {
+          autoResize: true, // This will auto-update the layout when the browser window is resized.
+          container: $main, // Optional, used for some extra CSS styling
+          offset: 20, // Optional, the distance between grid items
+          itemWidth: 280 // Optional, the width of a grid item
+        };
+      /**
+       * Reinitializes the wookmark handler after all images have loaded
+       */
+      function applyLayout() {
+        $tiles.imagesLoaded(function () {
+          // Destroy the old handler
+          if ($handler.wookmarkInstance) {
+            $handler.wookmarkInstance.clear();
+          }
+
+          // Create a new layout handler.
+          $handler = $('li', $tiles);
+          $handler.wookmark(options);
+        });
+      }
+      /**
+       * When scrolled all the way to the bottom, add more tiles
+       */
+      function onScroll() {
+        // Check if we're within 100 pixels of the bottom edge of the broser window.
+        var winHeight = window.innerHeight ? window.innerHeight : $window.height(), // iphone fix
+          closeToBottom = ($window.scrollTop() + winHeight > $document.height() - 100);
+
+        if (closeToBottom) {
+          // Get the first then items from the grid, clone them, and add them to the bottom of the grid
+          var $items = $('li', $tiles),
+            $firstTen = $items.slice(0, 10);
+          $tiles.append($firstTen.clone());
+
+          applyLayout();
+        }
       };
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
-      }
+      // Call the layout function for the first time
+      applyLayout();
 
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <!-- /move top -->
+      // Capture scroll event.
+      $window.bind('scroll.wookmark', onScroll);
+    })(jQuery);
+  </script>
+</body>
 
-    <!-- disable body scroll which navbar is in active -->
-    <script>
-      $(function () {
-        $(".navbar-toggler").click(function () {
-          $("body").toggleClass("noscroll");
-        });
-      });
-    </script>
-    <!-- disable body scroll which navbar is in active -->
-
-    <!-- Template JavaScript -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-
-    <!-- theme changer js -->
-    <script src="assets/js/theme-change.js"></script>
-    <!-- //theme changer js -->
-
-    <!-- courses owlcarousel -->
-    <script src="assets/js/owl.carousel.js"></script>
-
-    <!-- script for testimonials -->
-    <script>
-      $(document).ready(function () {
-        $(".owl-testimonial").owlCarousel({
-          loop: true,
-          margin: 0,
-          nav: true,
-          responsiveClass: true,
-          autoplay: false,
-          autoplayTimeout: 5000,
-          autoplaySpeed: 1000,
-          autoplayHoverPause: false,
-          responsive: {
-            0: {
-              items: 1,
-              nav: false,
-            },
-            480: {
-              items: 1,
-              nav: false,
-            },
-            667: {
-              items: 1,
-              nav: true,
-            },
-            1000: {
-              items: 1,
-              nav: true,
-            },
-          },
-        });
-      });
-    </script>
-    <!-- //script for testimonials -->
-
-    <!-- bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-
-
-    <!-- DARI PINBALL -->
-    		<!----wookmark-scripts---->
-        <script src="js/jquery.imagesloaded.js"></script>
-        <script src="js/jquery.wookmark.js"></script>
-        <script type="text/javascript">
-          (function ($){
-            var $tiles = $('#tiles'),
-                $handler = $('li', $tiles),
-                $main = $('#main'),
-                $window = $(window),
-                $document = $(document),
-                options = {
-                  autoResize: true, // This will auto-update the layout when the browser window is resized.
-                  container: $main, // Optional, used for some extra CSS styling
-                  offset: 20, // Optional, the distance between grid items
-                  itemWidth:280 // Optional, the width of a grid item
-                };
-            /**
-             * Reinitializes the wookmark handler after all images have loaded
-             */
-            function applyLayout() {
-              $tiles.imagesLoaded(function() {
-                // Destroy the old handler
-                if ($handler.wookmarkInstance) {
-                  $handler.wookmarkInstance.clear();
-                }
-      
-                // Create a new layout handler.
-                $handler = $('li', $tiles);
-                $handler.wookmark(options);
-              });
-            }
-            /**
-             * When scrolled all the way to the bottom, add more tiles
-             */
-            function onScroll() {
-              // Check if we're within 100 pixels of the bottom edge of the broser window.
-              var winHeight = window.innerHeight ? window.innerHeight : $window.height(), // iphone fix
-                  closeToBottom = ($window.scrollTop() + winHeight > $document.height() - 100);
-      
-              if (closeToBottom) {
-                // Get the first then items from the grid, clone them, and add them to the bottom of the grid
-                var $items = $('li', $tiles),
-                    $firstTen = $items.slice(0, 10);
-                $tiles.append($firstTen.clone());
-      
-                applyLayout();
-              }
-            };
-      
-            // Call the layout function for the first time
-            applyLayout();
-      
-            // Capture scroll event.
-            $window.bind('scroll.wookmark', onScroll);
-          })(jQuery);
-        </script>
-  </body>
 </html>
